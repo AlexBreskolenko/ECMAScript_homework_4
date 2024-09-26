@@ -36,3 +36,14 @@ async function saveUserData(url, user) {
 }
 
 // **************Task 3
+const btnEll = document.querySelector(".btn");
+
+function changeStyleDelayed(className, time) {
+  setTimeout(() => {
+    className.style.backgroundColor = "red";
+  }, time);
+}
+
+btnEll.addEventListener("click", () => {
+  changeStyleDelayed(btnEll, 2000);
+});
